@@ -1,10 +1,160 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>11-Б клас</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            width: 250px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.3);
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #1e3c72;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+    </style>
 </head>
 <body>
-        <h1>У мене все вийде. Залишимо</h1>
+
+<header>
+    <h1>11-Б клас</h1>
+    <p>Чернівецький ліцей №14</p>
+</header>
+
+<nav>
+    <a href="#about">Про нас</a>
+    <a href="#students">Учні</a>
+    <a href="#events">Події</a>
+    <a href="#contacts">Контакти</a>
+</nav>
+
+<section id="about">
+    <h2>Про наш клас</h2>
+    <p>
+        Ми — дружній та активний 11-Б клас.
+        Любимо інформатику, історію та сучасні технології.
+        Беремо участь у проєктах, конкурсах та шкільних заходах.
+    </p>
+</section>
+
+<section id="students">
+    <h2>Актив класу</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Президент класу</h3>
+            <p>Ім'я Прізвище</p>
+        </div>
+
+        <div class="card">
+            <h3>Староста</h3>
+            <p>Ім'я Прізвище</p>
+        </div>
+
+        <div class="card">
+            <h3>Відповідальний за ІТ</h3>
+            <p>Ім'я Прізвище</p>
+        </div>
+    </div>
+</section>
+
+<section id="events">
+    <h2>Наші події</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Хакатон</h3>
+            <p>Участь у шкільному ІТ-хакатоні</p>
+        </div>
+
+        <div class="card">
+            <h3>Екскурсія</h3>
+            <p>Поїздка до університету</p>
+        </div>
+
+        <div class="card">
+            <h3>Волонтерство</h3>
+            <p>Благодійна акція</p>
+        </div>
+    </div>
+</section>
+
+<section id="contacts">
+    <h2>Контакти</h2>
+    <p>Email: 11b@classschool.ua</p>
+    <a href="#" class="btn">Написати нам</a>
+</section>
+
+<footer>
+    <p>© 2026 11-Б клас | Створено на уроці інформатики</p>
+</footer>
+
 </body>
 </html>
